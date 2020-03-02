@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lab1</string>
+    <string name="question">What programming language is your favorite?</string>
+    <string name="java">Java</string>
+    <string name="python">Python</string>
+    <string name="c_plus_plus">C++</string>
+    <string name="c_sharp">C#</string>
+    <string name="prolog">Prolog</string>
+    <string name="another_language">Another language</string>
+    <string name="c">C</string>
+    <string name="button_ok">OK</string>
+</resources>

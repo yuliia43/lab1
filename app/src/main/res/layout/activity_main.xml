@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/question"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="344dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        android:paddingRight="50dp"
+        android:paddingEnd="50dp">
+
+        <RadioButton
+            android:id="@+id/java"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/java"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/python"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/python"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:onClick="onRadioButtonClicked"/>
+
+
+        <RadioButton
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/c"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:onClick="onRadioButtonClicked"/>
+
+
+        <RadioButton
+            android:id="@+id/c_plus_plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/c_plus_plus"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:onClick="onRadioButtonClicked"/>
+
+
+        <RadioButton
+            android:id="@+id/c_sharp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/c_sharp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:onClick="onRadioButtonClicked"/>
+
+
+        <RadioButton
+            android:id="@+id/prolog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prolog"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:onClick="onRadioButtonClicked"/>
+
+
+        <RadioButton
+            android:id="@+id/another"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/another_language"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="@string/button_ok"
+        android:layout_marginStart="230dp" />
+
+</LinearLayout>
