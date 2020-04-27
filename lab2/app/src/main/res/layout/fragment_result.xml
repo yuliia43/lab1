@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:foreground="@android:drawable/divider_horizontal_bright"
+    tools:context=".ResultFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:layout_marginTop="300dp"
+        android:background="#57E10C">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result"
+            android:textColor="?android:attr/textColorPrimaryNoDisable"
+            android:textSize="50sp"
+            tools:text="@string/result" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+</FrameLayout>
