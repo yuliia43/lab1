@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@android:drawable/divider_horizontal_bright"
+    tools:context=".ResultFragment"
+    android:paddingTop="300dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:background="#00D4CD">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result"
+            android:textColor="?android:attr/textColorPrimaryNoDisable"
+            android:textSize="50sp"
+            tools:text="@string/result" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/enterName"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+        android:background="#CED8FFFA"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="textPersonName"
+        android:hint="@string/yourName" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="300dp"
+        android:background="#B3D3D0"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/submit" />
+
+
+</FrameLayout>

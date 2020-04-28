@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">lab3</string>
+    <string name="question">What programming language is your favorite?</string>
+    <string name="java">Java</string>
+    <string name="python">Python</string>
+    <string name="c_plus_plus">C++</string>
+    <string name="c_sharp">C#</string>
+    <string name="prolog">Prolog</string>
+    <string name="another_language">Another language</string>
+    <string name="c">C</string>
+    <string name="button_ok">OK</string>
+    <string name="result">Your result is </string>
+    <string name="enterName">Enter your name to save the results:</string>
+    <string name="submit">Submit</string>
+    <string name="yourName">Your name</string>
+    <string name="getStats">General statistics</string>
+    <string name="statistics">Statistics</string>
+    <string name="stats">STATS</string>
+
+</resources>
