@@ -34,18 +34,8 @@ public class MainActivity extends AppCompatActivity implements OnHeadlineSelecte
 
 
     public void getStats(){
-        /*SharedPreferences sharedPreferences = this.getPreferences(Context.MODE_PRIVATE);
-        Map<String, ?> stats = sharedPreferences.getAll();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentManager.popBackStack();
-        StatsActivity statsActivity = new StatsActivity();
-        statsActivity.setStats((Map<String, String>) stats);*/
         Intent intent = new Intent(getApplicationContext(), StatsActivity.class);
         startActivity(intent);
-        /*fragmentTransaction
-                .replace(R.id.fragment_container, statsActivity)
-                .addToBackStack(null)
-                .commit();*/
     }
 
     private void addQuestionFragment(){

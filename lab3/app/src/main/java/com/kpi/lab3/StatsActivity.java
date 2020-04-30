@@ -1,8 +1,6 @@
 package com.kpi.lab3;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -22,19 +20,15 @@ import androidx.appcompat.app.AppCompatActivity;
  */
 public class StatsActivity extends AppCompatActivity {
     private Map<String, String> stats;
-    private Activity prefActivity;
 
     public StatsActivity() {
     }
 
-    public void setPrefActivity(Activity prefActivity) {
-        this.prefActivity = prefActivity;
-    }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         SharedPreferences sharedPreferences = getApplicationContext()
-                .getSharedPreferences(String.valueOf(R.string.stats), Context.MODE_PRIVATE);
+                .getSharedPreferences(String.valueOf(R.string.statsFile), Context.MODE_PRIVATE);
         stats = (Map<String, String>) sharedPreferences.getAll();
         setContentView(R.layout.activity_stats);
         TableLayout tbl = findViewById(R.id.stats_table);

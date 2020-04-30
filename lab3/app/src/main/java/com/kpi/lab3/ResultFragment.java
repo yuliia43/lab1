@@ -1,6 +1,5 @@
 package com.kpi.lab3;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -44,12 +43,17 @@ public class ResultFragment extends Fragment {
             public void onClick(View v) {
                 SharedPreferences sharedPreferences = getActivity()
                         .getApplicationContext()
-                        .getSharedPreferences(String.valueOf(R.string.stats), Context.MODE_PRIVATE);
-                sharedPreferences.edit()
-                        .putString(((EditText)view.findViewById(R.id.username)).getText().toString(), result)
-                        .commit();
-                Toast.makeText(getActivity(), "Added successfully!", Toast.LENGTH_SHORT).show();
-
+                        .getSharedPreferences(String.valueOf(R.string.statsFile), Context.MODE_PRIVATE);
+                String userName = ((EditText) view.findViewById(R.id.username)).getText().toString();
+                boolean nameExists = sharedPreferences.contains(userName);
+                    sharedPreferences.edit()
+                            .putString(userName, result)
+                            .commit();
+                if (!nameExists)
+                    Toast.makeText(getActivity(), "Added successfully!", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(getActivity(), "Updated successfully!", Toast.LENGTH_SHORT).show();
+                //getFragmentManager().popBackStack();
             }
         });
         return view;

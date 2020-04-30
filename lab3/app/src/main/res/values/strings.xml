@@ -15,6 +15,6 @@
     <string name="yourName">Your name</string>
     <string name="getStats">General statistics</string>
     <string name="statistics">Statistics</string>
-    <string name="stats">STATS</string>
+    <string name="statsFile">STATS</string>
 
 </resources>
