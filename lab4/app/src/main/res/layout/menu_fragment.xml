@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kpi.lab4.MenuFragment">
+
+    <TextView
+        android:id="@+id/chooseAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/choosingActionLabel"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/videosBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="70sp"
+        android:text="@string/videosAction"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/audiosBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="70sp"
+        android:text="@string/audioAction"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/infoLabel"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="145sp"
+        android:text="You can choose from the list below or search the web:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/insertUrl"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210sp"
+        android:layout_marginTop="170sp"
+        android:ems="10"
+        android:hint="@string/enterUrl"
+        android:inputType="textPersonName"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370sp"
+        android:layout_marginTop="170sp"
+        android:src="@android:drawable/checkbox_on_background"
+        android:visibility="invisible" />
+
+
+    <TableLayout
+        android:id="@+id/multimediaList"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:layout_marginTop="240sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:visibility="visible">
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/anotherOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="550sp"
+        android:text="Or you can"
+        android:textSize="28sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/loadFiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="550sp"
+        android:text="Load files from storage"
+        android:visibility="invisible" />
+
+
+</FrameLayout>
