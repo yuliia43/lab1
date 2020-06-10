@@ -58,18 +58,6 @@ public class MenuFragment extends Fragment {
         handlingMediaButton(view, R.id.audiosBtn, AUDIO);
         handlingMediaButton(view, R.id.videosBtn, VIDEO);
         setInternetSearchAction(view);
-        Button storageReceiverBtn = view.findViewById(R.id.loadFiles);
-        storageReceiverBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                StorageManager storageManager = StorageManager.
-            }
-        });
-        /*File externalStoragePublicDirectory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        File[] list = externalStoragePublicDirectory.listFiles();
-        for (File files: list){
-            System.out.println(files);
-        }*/
         return view;
     }
 
